@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "andhra-cloud-kitchen-rythu-bazar",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ]
+}
