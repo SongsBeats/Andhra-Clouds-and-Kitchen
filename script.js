@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
        1. Floating Header & Sticky CTA Bar
        ========================================== */
     const header = document.querySelector('.floating-header');
-    const floatingCtaBar = document.querySelector('.floating-cta-bar');
+    const floatingFabGroup = document.querySelector('.floating-fab-group');
     
     window.addEventListener('scroll', () => {
         // Shrink floating header on scroll
@@ -20,11 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
             header?.classList.remove('scrolled');
         }
 
-        // Reveal Sticky CTA bar on scroll
+        // Reveal Floating Action Buttons on scroll
         if (window.scrollY > 280) {
-            floatingCtaBar?.classList.add('visible');
+            floatingFabGroup?.classList.add('visible');
         } else {
-            floatingCtaBar?.classList.remove('visible');
+            floatingFabGroup?.classList.remove('visible');
         }
     });
 
