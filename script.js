@@ -1,5 +1,5 @@
 /* ==========================================================================
-   INTERACTIVE SCRIPT - ANDHRA CLOUD KITCHEN & RYTHU BAZAR
+   INTERACTIVE SCRIPT - ANDHRA FRUIT BOWLS & RYTHU BAZAR
    HANDLES: Floating headers, Scroll reveals, Mobile Drawer,
             Category Filters & Direct WhatsApp Item Booking.
    ========================================================================== */
@@ -120,12 +120,12 @@ document.addEventListener('DOMContentLoaded', () => {
     bookItemButtons.forEach(button => {
         button.addEventListener('click', (e) => {
             const btn = e.currentTarget;
-            const itemName = btn.getAttribute('data-item-name') || 'Special Dish';
-            const itemCategory = btn.getAttribute('data-item-category') || 'Culinary Item';
+            const itemName = btn.getAttribute('data-item-name') || 'Fresh Product';
+            const itemCategory = btn.getAttribute('data-item-category') || 'Healthy Product';
 
             // Construct clean, polite WhatsApp message
-            let messageText = `Hello Andhra Cloud Kitchen & Rythu Bazar!\n\n`;
-            messageText += `I am visiting your website and would like to book the following item:\n\n`;
+            let messageText = `Hello Andhra Fruit Bowls & Rythu Bazar!\n\n`;
+            messageText += `I am visiting your website and would like to order the following item:\n\n`;
             messageText += `*Item:* ${itemName}\n`;
             messageText += `*Category:* ${itemCategory}\n\n`;
             messageText += `Please confirm availability and delivery details. Thank you!`;
